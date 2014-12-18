@@ -9,18 +9,18 @@ node default {
     target       => '/etc/hosts',
   }
 
-  
   package {'puppetmaster':
     ensure  =>  latest,
-    require => Host['puppet.ms.dev'],
+    require => Host['puppet.ms.dev']
   }
     
   # Configure puppetdb and its underlying database
   class { 'puppetdb': 
     listen_address => '0.0.0.0',
     require => Package['puppetmaster'],
-    puppetdb_version => latest,
-    }
+    puppetdb_version => latest
+  }
+
   # Configure the puppet master to use puppetdb
   class { 'puppetdb::master::config': }
     
