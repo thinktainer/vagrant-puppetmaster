@@ -1,3 +1,15 @@
 [submodule "puppetdev/puppet"]
 	path = puppetdev/puppet
 	url = git@github.com:BedeGaming/puppet.git
+[submodule "puppetdev/module-bede"]
+	path = puppetdev/module-bede
+	url = git@github.com:BedeGaming/puppet-bede.git
+	branch = bede
+[submodule "puppetdev/module-role"]
+	path = puppetdev/module-role
+	url = git@github.com:BedeGaming/puppet-bede.git
+	branch = role
+[submodule "puppetdev/module-profile"]
+	path = puppetdev/module-profile
+	url = git@github.com:BedeGaming/puppet-bede.git
+	branch = profile
