@@ -17,9 +17,6 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define :master do |master_config|
-    master_config.vm.synced_folder "puppet/manifests", "/etc/puppet/manifests"
-    master_config.vm.synced_folder "puppet/modules", "/etc/puppet/modules"
-    master_config.vm.synced_folder "puppet/hieradata", "/etc/puppet/hieradata"
     master_config.vm.hostname = "puppet.ms.dev"
     master_config.vm.box = "thinktainer/precise64"
     master_config.vm.network :private_network, ip: "192.168.33.10"
