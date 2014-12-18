@@ -1,0 +1,3 @@
+[submodule "puppetdev/puppet"]
+	path = puppetdev/puppet
+	url = git@github.com:BedeGaming/puppet.git
